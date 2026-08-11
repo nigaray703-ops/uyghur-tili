@@ -1,0 +1,14 @@
+.DS_Store
+dist-cn/
+dist-cn-initial-preview-20260808/
+*.zip
+
+# Internal planning notes stay local and must never enter the public history.
+docs/superpowers/
+
+# Overseas-only authoring and review assets are not part of the domestic repository.
+site/re-record-audio.html
+site/re-record-audio.js
+site/assets/audio/README.md
+site/assets/audio/human/*/manifest.json
+site/assets/audio/human/reading/human_reading_quote_*.webm
