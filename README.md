@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <strong>Source available for viewing and reference. Not open source. All rights reserved.</strong>
+  <strong>Independent portfolio project. Source-visible, not open source, and not a community or collaborative open-source project. All rights reserved.</strong>
 </p>
 
 <p align="center">
@@ -28,6 +28,8 @@
 ## 项目介绍
 
 Uyghur Tili 是独立于海外版 Ana Tilim 的中国大陆静态版本。它面向从零开始学习维吾尔语的人，也适合会说维吾尔语、但希望加强识字、拼写、键盘输入、阅读和书写能力的学习者。
+
+本项目由 [`nigaray703-ops`](https://github.com/nigaray703-ops) 独立创建、主导、拥有和正式维护，用于展示完整的产品思考、内容组织、Web 实现、质量检查和发布能力。公开仓库、Fork、反馈或建议不会产生共同作者、共同所有者、正式协作者或维护者身份。详见 [`AUTHORS.md`](./AUTHORS.md) 与 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
 
 核心学习功能在浏览器内运行，不要求注册或登录。学习进度默认保存在当前浏览器中，可以手动导出为 JSON 文件，并在另一台设备或浏览器中导入。
 
@@ -92,6 +94,7 @@ node scripts/build-cn.mjs
 
 ```bash
 node tests/repository-boundary.test.mjs
+node tests/ownership-policy.test.mjs
 node scripts/build-cn.mjs
 node tests/cn-static.test.mjs
 ```
@@ -108,8 +111,12 @@ scripts/build-cn.mjs          国内版发布包生成脚本
 tests/cn-static.test.mjs      国内版静态与功能检查
 tests/repository-boundary.test.mjs
                               GitHub 公开文件边界检查
+tests/ownership-policy.test.mjs
+                              个人所有权与贡献限制检查
 docs/外部依赖审计.md           国内版外部请求与本地资源审计
 CloudBase上传和更新说明.md      CloudBase 部署与更新步骤
+AUTHORS.md                    项目所有者与唯一正式维护者说明
+CONTRIBUTING.md               仅接收反馈、不接收外部代码贡献
 LICENSE.md                    版权、参考和音频使用条款
 ```
 
@@ -129,7 +136,7 @@ LICENSE.md                    版权、参考和音频使用条款
 
 ## 版权、参考与音频使用
 
-**Source available for viewing and reference. Not open source. All rights reserved.**
+**Independent portfolio project. Source-visible for viewing and reference, not open source, and not a community or collaborative open-source project. All rights reserved.**
 
 可以访问正式网站学习、查看仓库了解实现思路、在注明来源和官方链接后介绍或引用项目，也可以借鉴一般想法后使用自己的代码、原创内容、不同品牌和不同视觉设计独立开发明显不同的作品。
 
@@ -143,7 +150,9 @@ LICENSE.md                    版权、参考和音频使用条款
 
 ## 反馈与外部修改
 
-欢迎通过网站内的匿名反馈入口提供内容、音频或显示问题。外部用户可以引用或介绍项目，但不能直接修改本仓库的 `main` 分支或正式网站。任何外部代码修改是否接受，由仓库所有者单独决定；提交建议不代表获得源码、设计、课程或音频的再利用许可。
+欢迎通过网站内的匿名反馈入口报告事实错误、音频问题、显示问题、无障碍问题或安全问题。**本项目不接收未经邀请的 Pull Request，也不招募共同开发者或共同维护者。** 是否修正以及如何修正，只由仓库所有者决定。
+
+反馈、建议、纠错、讨论、Pull Request 或 Fork 不会形成共同作者、共同所有者、正式协作者或维护者身份，也不会授予复制、修改、重新发布源码、设计、课程或音频的许可。完整边界见 [`CONTRIBUTING.md`](./CONTRIBUTING.md)。
 
 ## 当前状态
 
