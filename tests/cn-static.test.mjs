@@ -44,6 +44,11 @@ assert.match(indexHtml, /rel="apple-touch-icon"/, "国内版入口应接入手�
 assert.match(indexHtml, /rel="manifest"/, "国内版入口应接入离线网站清单");
 assert.match(indexHtml, /\.\/app\.js\?v=20260812-unified-letter-choices/, "国内版入口应刷新统一字母选择题与可恢复单元脚本缓存");
 assert.match(indexHtml, /\.\/styles\.css\?v=20260812-final-layout/, "国内版入口应刷新最终课程共享响应式与阅读标题样式缓存");
+assert.match(indexHtml, /\.\/course-data\/alphabet-data\.js\?v=20260812-joining-rules/, "国内版入口应刷新字母连接规则缓存");
+assert.match(indexHtml, /\.\/course-data\/combo-data\.js\?v=20260812-joining-rules/, "国内版入口应刷新组合连接规则缓存");
+assert.match(indexHtml, /\.\/course-data\/syllable-data\.js\?v=20260812-joining-rules/, "国内版入口应刷新连接判断题缓存");
+assert.match(indexHtml, /\.\/i18n\/alphabet-en\.js\?v=20260812-joining-rules/, "国内版入口应刷新英文字母连接说明缓存");
+assert.match(indexHtml, /\.\/i18n\/combo-en\.js\?v=20260812-joining-rules/, "国内版入口应刷新英文组合连接说明缓存");
 assert.match(indexHtml, /\.\/sentence-morphemes\.js\?v=20260809-word-formation/, "国内版入口应加载本地人工词素数据");
 
 const localReferences = [...indexHtml.matchAll(/(?:href|src)="([^"]+)"/g)].map((match) => match[1]);
