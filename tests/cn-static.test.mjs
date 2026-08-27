@@ -132,7 +132,7 @@ assert.equal(config.cloudEnabled, false, "国内版不应启用云端服务");
 assert.equal(config.brandName, "Uyghur Tili", "国内版应使用 Uyghur Tili 品牌");
 assert.ok(course, "课程数据应在无网络环境中加载");
 assert.ok(!course.readingUnits.some((unit) => unit.id === "famous-quotes"), "国内版应隐藏名人名言单元");
-assert.equal(course.readingUnits.find((unit) => unit.id === "uyghur-proverbs")?.title, "第九单元：维吾尔谚语");
+assert.equal(course.readingUnits.find((unit) => unit.id === "uyghur-proverbs")?.title, "第九单元：维吾尔语谚语与智慧短句");
 assert.doesNotMatch(
   JSON.stringify(course),
   /assalamu|alaykum|ئەسسالام|ۋەئەلەيكۇم/i,
